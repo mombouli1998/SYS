@@ -1,0 +1,16 @@
+### Compilation et lancement du serveur
+# Compilation du code du server:
+javac helloImpl.java
+
+# Génération stub et skeleton:
+rmic helloImpl
+# Démarrage du reférentiel d'interface:
+rmiregistry &
+# Compilation et lancement du serveur:
+javac serveur.java
+java serveur
+
+## Compilation et lancement du client dans un autre terminale 
+
+javac client.java
+java client
